@@ -1,18 +1,17 @@
 package org.davidpenagos.encuesta_educacion_colombia.domain.service;
 
-import org.davidpenagos.encuesta_educacion_colombia.domain.model.Encuesta;
+import org.davidpenagos.encuesta_educacion_colombia.domain.model.Survey;
 
-import javax.swing.*;
 import java.util.List;
 
 public interface IndicatorService {
-    void mostrarMediaEdad(List<Encuesta> encuestaDatos);
+    void showAverageAge(List<Survey> surveyData);
 
-    void mostrarConteoGenero(List<Encuesta> encuestaDatos);
+    void showGenderCount(List<Survey> surveyData);
 
-    void mostrarFrecuenciaProfesiones(List<Encuesta> encuestaDatos);
+    void showFrequencyProfessions(List<Survey> surveyData);
 
-    void mostrarResultadosPregunta1(List<Encuesta> encuestaDatos);
+    void showResultsQuestionOne(List<Survey> surveyData);
 
-    void mostrarResultadosPregunta2(List<Encuesta> encuestaDatos);
+    void showResultsQuestionOnetwo(List<Survey> surveyData);
 }
