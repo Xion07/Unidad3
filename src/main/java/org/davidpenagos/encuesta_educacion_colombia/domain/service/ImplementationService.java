@@ -23,8 +23,8 @@ public class ImplementationService implements IndicatorService {
 
     @Override
     public void showGenderCount(List<Survey> surveyDatoes) {
-        long women = surveyDatoes.stream().filter(survey -> survey.gender() == 'F').count();
-        long men = surveyDatoes.stream().filter(survey -> survey.gender() == 'M').count();
+        long women = 0;
+        long men = 0;
         System.out.println("There is " + women + " Women and " + men + " Men");
     }
 

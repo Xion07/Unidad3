@@ -1,0 +1,6 @@
+David, 32, M, Ingeniero, 2, 3
+Carolina, 25, F, Tecnologo, 1, 2
+Jaime, 58, M, Tecnologo, 3, 3
+Sandra, 47, F, Doctora, 3, 1
+Sebastian, 27, M, Ingeniero, 1, 3
+Sarahi, 18, F, Estudiante, 2, 2
