@@ -28,10 +28,7 @@ public class ImplementationRecord implements MethodRecord {
     }
 
     private List<String> readFileWithGrades(){
-        //Este método lee el archivo y adiciona cada linea en una posicion de una Lista
 
-        //Para el ejercicio se utiliza la ruta donde se encentra el archivo en el codigo fuente.
-        //Este ruta es diferente al momento de empaquetar el proyecto
 
         Path path = Paths.get( "./src/main/resources/Survey.txt");
         try (Stream<String> stream = Files.lines( path)) {
@@ -39,14 +36,13 @@ public class ImplementationRecord implements MethodRecord {
         } catch (IOException x) {
             logger.error("IOException: {0}", x);
         }
-        return Collections.emptyList();//Devuelve una lista vacía
+        return Collections.emptyList();
     }
 
     private Survey buildSurvey(String plainTextGrade){
-    /*Este metodo toma una linea del archivo para generar un vector
-   y con dicho vector generar una Nota
-     */
-        String[] questionArray = plainTextGrade.split(",");//En el archivo las notas vienen separadas por comas por ejemplo: UNIDAD 1,4.5D,2023-08-01
+
+
+        String[] questionArray = plainTextGrade.split(",");
 
         return new Survey( questionArray[0],
                                              Double.valueOf(questionArray[1]),
